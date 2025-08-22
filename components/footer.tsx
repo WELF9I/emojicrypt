@@ -88,7 +88,7 @@ export function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
-          <p>© 2025 EmojiCrypt. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} EmojiCrypt. All rights reserved.</p>
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
             <span>Made with ❤️ for secure communication</span>
           </div>

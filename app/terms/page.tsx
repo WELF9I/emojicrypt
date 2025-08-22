@@ -3,10 +3,15 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Terms of Service - EmojiCrypt",
+  title: "Terms of Service - EmojiCrypt | Usage Terms and Conditions",
   description:
-    "Terms of Service for EmojiCrypt. Learn about the rules and guidelines for using our emoji steganography tool.",
-  keywords: "EmojiCrypt terms of service, usage terms, emoji encoder rules, steganography tool terms",
+    "Terms of Service for EmojiCrypt. Learn about the rules and guidelines for using our emoji steganography tool. Updated for 2025 compliance.",
+  keywords: "EmojiCrypt terms of service, usage terms, emoji encoder rules, steganography tool terms, terms and conditions 2025, online tool terms",
+  openGraph: {
+    title: "Terms of Service - EmojiCrypt",
+    description: "Usage terms and conditions for EmojiCrypt - Your guidelines for using our steganography tool.",
+    type: "website",
+  },
 }
 
 export default function TermsPage() {

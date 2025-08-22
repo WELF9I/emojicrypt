@@ -12,14 +12,14 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "EmojiCrypt - Hide Secret Messages in Emojis & Letters | Free Online Tool",
+  title: "Emoji Encoder Tool - Encode & Decode Hidden Messages Online",
   description:
-    "Hide and reveal secret messages using emojis, letters, and special characters. Free online steganography tool for secure communication. Encode text within emojis instantly.",
+    "Encode secret messages into emojis, letters, digits, or special characters. Easily copy-paste encoded text and decode hidden messages instantly. Free online steganography tool.",
   keywords:
-    "emoji encoder, hide message in emoji, secret message tool, emoji steganography, encode text emoji, hidden message generator, emoji cryptography, secure messaging, text encoder 2025",
-  authors: [{ name: "EmojiCrypt Team" }],
-  creator: "EmojiCrypt",
-  publisher: "EmojiCrypt",
+    "emoji encoder, emoji message encoder, hidden message encoder, encode hidden messages with emojis, secret message encoder tool, emoji text encoder, encode message in emojis, emoji cipher tool, secret text encoder, hidden text decoder, encode text with special characters, emoji encryption tool, message encoding online, text to emoji converter, encode message with digits and symbols, emoji alphabet encoder, hidden message generator, emoji-based secret messages, encode and decode messages, online secret message tool",
+  authors: [{ name: "Mohamed Amine Welfeki" }],
+  creator: "Mohamed Amine Welfeki",
+  publisher: "Mohamed Amine Welfeki",
   formatDetection: {
     email: false,
     address: false,
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "EmojiCrypt - Hide Secret Messages in Emojis & Letters",
+    title: "Emoji Encoder Tool - Encode & Decode Hidden Messages with Emojis & Text",
     description:
-      "Free online tool to hide and reveal secret messages using emojis, letters, and special characters. Secure steganography for modern communication.",
+      "Hide secret messages inside emojis, alphabets, digits, or special characters. Copy, paste, and decode hidden texts instantly. Free online steganography tool.",
     url: "https://emojicrypt.vercel.app",
     siteName: "EmojiCrypt",
     images: [
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EmojiCrypt - Hide Secret Messages in Emojis",
+    title: "Emoji Encoder Tool - Encode & Decode Hidden Messages with Emojis & Text",
     description:
-      "Free online tool to encode and decode hidden messages using emojis and letters. Secure communication made simple.",
+      "Hide secret messages inside emojis, alphabets, digits, or special characters. Copy, paste, and decode hidden texts instantly.",
     images: ["/og-image.webp"],
     creator: "@emojicrypt",
   },
@@ -65,7 +65,13 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon.png" },
+      { url: "/favicon.webp" },
+    ],
+  },
 }
 
 export default function RootLayout({
@@ -84,7 +90,7 @@ export default function RootLayout({
               "@type": "WebApplication",
               name: "EmojiCrypt",
               description:
-                "Hide and reveal secret messages using emojis, letters, and special characters. Free online steganography tool for secure communication.",
+                "Encode secret messages into emojis, letters, digits, or special characters. Easily copy-paste encoded text and decode hidden messages instantly. Free online steganography tool.",
               url: "https://emojicrypt.vercel.app",
               applicationCategory: "UtilityApplication",
               operatingSystem: "Any",
@@ -94,16 +100,19 @@ export default function RootLayout({
                 priceCurrency: "USD",
               },
               creator: {
-                "@type": "Organization",
-                name: "EmojiCrypt Team",
+                "@type": "Person",
+                name: "Mohamed Amine Welfeki",
+                email: "welfkimedamine@hotmail.com",
               },
               featureList: [
                 "Hide messages in emojis",
-                "Encode text in letters",
+                "Encode text in letters and numbers",
                 "Special character encoding",
                 "Instant decoding",
                 "Mobile responsive",
                 "Dark/Light theme",
+                "Free to use",
+                "No registration required",
               ],
             }),
           }}

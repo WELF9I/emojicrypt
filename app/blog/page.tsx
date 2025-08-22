@@ -5,13 +5,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Blog - EmojiCrypt | Steganography and Secure Communication",
+  title: "Blog - EmojiCrypt | Steganography and Secure Communication Guides",
   description:
-    "Learn about emoji steganography, secure communication methods, and creative use cases for hiding messages in plain sight.",
-  keywords: "emoji steganography, secure communication, hidden messages, privacy, cryptography, digital security",
+    "Learn about emoji steganography, secure communication methods, and creative use cases for hiding messages in plain sight. Expert guides and tutorials.",
+  keywords: "emoji steganography, secure communication, hidden messages, privacy, cryptography, digital security, steganography tutorials, secure messaging guides",
   openGraph: {
-    title: "EmojiCrypt Blog - Steganography Insights",
-    description: "Discover the art of hiding messages in emojis and letters with our comprehensive guides.",
+    title: "EmojiCrypt Blog - Steganography Insights and Tutorials",
+    description: "Discover the art of hiding messages in emojis and letters with our comprehensive guides and tutorials.",
     type: "website",
   },
 }

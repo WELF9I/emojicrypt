@@ -3,10 +3,15 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - EmojiCrypt",
+  title: "Privacy Policy - EmojiCrypt | Data Protection and Privacy",
   description:
-    "Learn how EmojiCrypt protects your privacy. We process all data locally in your browser and never store your messages.",
-  keywords: "EmojiCrypt privacy policy, data protection, browser-based encryption, secure messaging",
+    "Learn how EmojiCrypt protects your privacy. We process all data locally in your browser and never store your messages. Comprehensive privacy policy for 2025.",
+  keywords: "EmojiCrypt privacy policy, data protection, browser-based encryption, secure messaging, steganography privacy, local data processing, privacy 2025",
+  openGraph: {
+    title: "Privacy Policy - EmojiCrypt",
+    description: "Comprehensive privacy policy for EmojiCrypt - Your data protection and privacy guidelines.",
+    type: "website",
+  },
 }
 
 export default function PrivacyPage() {

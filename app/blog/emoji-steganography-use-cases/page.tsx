@@ -17,15 +17,22 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "10 Creative Use Cases for Emoji Steganography | EmojiCrypt Blog",
+  title: "10 Creative Use Cases for Emoji Steganography in 2025 | EmojiCrypt",
   description:
-    "Discover innovative ways to use emoji steganography for secure communication, business, education, and creative projects. Learn practical applications of hidden messaging.",
+    "Discover 10 innovative ways to use emoji steganography for secure communication, business privacy, education, and creative projects. Learn practical applications of hidden messaging.",
   keywords:
-    "emoji steganography use cases, hidden messages, secure communication, business privacy, creative messaging, digital security applications",
+    "emoji steganography use cases, hidden messages, secure communication, business privacy, creative messaging, digital security applications, steganography 2025, emoji cryptography, secure messaging",
   openGraph: {
-    title: "10 Creative Use Cases for Emoji Steganography",
-    description: "Explore practical applications of hiding messages in emojis for security, business, and creativity.",
+    title: "10 Creative Use Cases for Emoji Steganography in 2025",
+    description: "Explore 10 practical applications of hiding messages in emojis for security, business, and creativity in 2025.",
     type: "article",
+    publishedTime: "2025-08-22T00:00:00Z",
+    authors: ["EmojiCrypt Team"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "10 Creative Use Cases for Emoji Steganography in 2025",
+    description: "Explore practical applications of hiding messages in emojis for security, business, and creativity.",
   },
 }
 
@@ -118,7 +125,7 @@ export default function EmojiSteganographyUseCases() {
             privacy protection in our increasingly digital world.
           </p>
           <div className="flex items-center gap-4 text-sm text-muted-foreground border-l-4 border-primary pl-4">
-            <span>Published: January 15, 2025</span>
+            <span>Published: August 22, 2025</span>
             <span>•</span>
             <span>8 min read</span>
             <span>•</span>

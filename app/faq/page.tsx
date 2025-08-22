@@ -4,10 +4,15 @@ import { ArrowLeft } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "FAQ - EmojiCrypt | Frequently Asked Questions",
+  title: "FAQ - EmojiCrypt | Frequently Asked Questions About Emoji Steganography",
   description:
-    "Find answers to common questions about EmojiCrypt, the free online tool for hiding messages in emojis and letters.",
-  keywords: "EmojiCrypt FAQ, emoji encoder questions, steganography help, hidden message tool support",
+    "Find answers to common questions about EmojiCrypt, the free online tool for hiding messages in emojis and letters. Learn about steganography, security, and usage.",
+  keywords: "EmojiCrypt FAQ, emoji encoder questions, steganography help, hidden message tool support, emoji cryptography FAQ, secure messaging questions",
+  openGraph: {
+    title: "FAQ - EmojiCrypt | Frequently Asked Questions",
+    description: "Answers to common questions about hiding messages in emojis and letters with EmojiCrypt.",
+    type: "website",
+  },
 }
 
 const faqs = [
@@ -90,7 +95,7 @@ export default function FAQPage() {
           </CardHeader>
           <CardContent>
             <a
-              href="mailto:support@emojicrypt.com"
+              href="mailto:welfkimedamine@hotmail.com"
               className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
             >
               Contact Support
