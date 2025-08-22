@@ -4,6 +4,7 @@ import { DM_Sans } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { SiteLayout } from "@/components/site-layout"
+import { Analytics } from '@vercel/analytics/next';
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -12,7 +13,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Emoji Encoder Tool - Encode & Decode Hidden Messages Online",
+  title: "Hide a message in an emoji - Encode & Decode Hidden Messages Online",
   description:
     "Encode secret messages into emojis, letters, digits, or special characters. Easily copy-paste encoded text and decode hidden messages instantly. Free online steganography tool.",
   keywords:
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://emojicrypt.vercel.app"),
+  metadataBase: new URL("https://emoji-crypt.vercel.app"),
   alternates: {
     canonical: "/",
   },
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     title: "Emoji Encoder Tool - Encode & Decode Hidden Messages with Emojis & Text",
     description:
       "Hide secret messages inside emojis, alphabets, digits, or special characters. Copy, paste, and decode hidden texts instantly. Free online steganography tool.",
-    url: "https://emojicrypt.vercel.app",
+    url: "https://emoji-crypt.vercel.app",
     siteName: "EmojiCrypt",
     images: [
       {
@@ -91,7 +92,7 @@ export default function RootLayout({
               name: "EmojiCrypt",
               description:
                 "Encode secret messages into emojis, letters, digits, or special characters. Easily copy-paste encoded text and decode hidden messages instantly. Free online steganography tool.",
-              url: "https://emojicrypt.vercel.app",
+              url: "https://emoji-crypt.vercel.app",
               applicationCategory: "UtilityApplication",
               operatingSystem: "Any",
               offers: {
@@ -120,7 +121,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <SiteLayout>{children}</SiteLayout>
+          <SiteLayout>{children}<Analytics /></SiteLayout>
         </ThemeProvider>
       </body>
     </html>

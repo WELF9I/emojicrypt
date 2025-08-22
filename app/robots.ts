@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/admin/", "/_next/", "/private/"],
     },
-    sitemap: "https://emojicrypt.vercel.app/sitemap.xml",
-    host: "https://emojicrypt.vercel.app",
+    sitemap: "https://emoji-crypt.vercel.app/sitemap.xml",
+    host: "https://emoji-crypt.vercel.app",
   }
 }

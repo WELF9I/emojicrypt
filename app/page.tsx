@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Create secret messages using emojis, alphabets, digits, or special characters. Copy and decode hidden texts easily.",
     type: "website",
-    url: "https://emojicrypt.vercel.app",
+    url: "https://emoji-crypt.vercel.app",
   },
   twitter: {
     card: "summary_large_image",
@@ -34,7 +34,7 @@ export default function Home() {
             name: "EmojiCrypt",
             description:
               "Free online tool to encode secret messages into emojis, letters, digits, or special characters. Hide and reveal hidden messages instantly.",
-            url: "https://emojicrypt.vercel.app",
+            url: "https://emoji-crypt.vercel.app",
             applicationCategory: "UtilityApplication",
             operatingSystem: "Any",
             offers: {
