@@ -2,6 +2,8 @@
 
 EmojiCrypt is a free online tool that allows you to encode hidden messages into emojis, letters, numbers, and special characters using advanced steganography techniques. You can also decode messages that have been hidden using this tool.
 
+![og-image](https://github.com/user-attachments/assets/ef0ec2de-fd74-45f0-92d0-d382dffc9eb9)
+
 ## Features
 
 - **Emoji Encoding**: Hide secret messages within emoji sequences
