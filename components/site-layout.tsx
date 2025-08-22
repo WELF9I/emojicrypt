@@ -1,7 +1,12 @@
-"use client"
+import dynamic from "next/dynamic"
 
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
+const Header = dynamic(() => import("@/components/header").then(mod => mod.Header), {
+  loading: () => <div className="h-16" />
+})
+
+const Footer = dynamic(() => import("@/components/footer").then(mod => mod.Footer), {
+  loading: () => <div className="h-64" />
+})
 
 export function SiteLayout({ children }: { children: React.ReactNode }) {
   return (

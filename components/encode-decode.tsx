@@ -1,17 +1,26 @@
 "use client"
 
 import { useState } from "react"
+import dynamic from "next/dynamic"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
 import { Switch } from "@/components/ui/switch"
 import { Label } from "@/components/ui/label"
 import { Copy, Loader2, Check, RotateCcw } from "lucide-react"
-import { EmojiPicker } from "./emoji-picker"
-import { AlphabetSelector } from "./alphabet-selector"
 import { useToast } from "@/hooks/use-toast"
 import { encodeMessage, decodeMessage } from "@/lib/crypto-utils"
 import { z } from "zod"
+
+const EmojiPicker = dynamic(() => import("./emoji-picker").then(mod => mod.EmojiPicker), { 
+  ssr: false,
+  loading: () => <div className="h-48 flex items-center justify-center text-muted-foreground">Loading emoji picker...</div>
+})
+
+const AlphabetSelector = dynamic(() => import("./alphabet-selector").then(mod => mod.AlphabetSelector), { 
+  ssr: false,
+  loading: () => <div className="h-48 flex items-center justify-center text-muted-foreground">Loading character selector...</div>
+})
 
 const encodeSchema = z.object({
   inputText: z.string().min(1, "Please enter some text to encode"),
