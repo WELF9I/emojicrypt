@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { DM_Sans } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { SiteLayout } from "@/components/site-layout"
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -11,7 +12,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "EmojiCrypt - Hide Secret Messages in Emojis & Letters | Free Online Tool 2025",
+  title: "EmojiCrypt - Hide Secret Messages in Emojis & Letters | Free Online Tool",
   description:
     "Hide and reveal secret messages using emojis, letters, and special characters. Free online steganography tool for secure communication. Encode text within emojis instantly.",
   keywords:
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "EmojiCrypt",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.webp",
         width: 1200,
         height: 630,
         alt: "EmojiCrypt - Hide Messages in Emojis",
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     title: "EmojiCrypt - Hide Secret Messages in Emojis",
     description:
       "Free online tool to encode and decode hidden messages using emojis and letters. Secure communication made simple.",
-    images: ["/og-image.png"],
+    images: ["/og-image.webp"],
     creator: "@emojicrypt",
   },
   robots: {
@@ -64,12 +65,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "your-google-verification-code",
-    yandex: "your-yandex-verification-code",
-    yahoo: "your-yahoo-verification-code",
-  },
-    generator: 'v0.app'
+
 }
 
 export default function RootLayout({
@@ -115,7 +111,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          {children}
+          <SiteLayout>{children}</SiteLayout>
         </ThemeProvider>
       </body>
     </html>

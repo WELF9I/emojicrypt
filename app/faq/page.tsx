@@ -54,51 +54,49 @@ const faqs = [
 
 export default function FAQPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/20">
-      <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="mb-8">
-          <Link
-            href="/"
-            className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors mb-4"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to EmojiCrypt
-          </Link>
-          <h1 className="text-4xl font-bold text-foreground mb-4">Frequently Asked Questions</h1>
-          <p className="text-lg text-muted-foreground">
-            Everything you need to know about EmojiCrypt and hiding messages in emojis.
-          </p>
-        </div>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <div className="mb-8">
+        <Link
+          href="/"
+          className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors mb-4"
+        >
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          Back to EmojiCrypt
+        </Link>
+        <h1 className="text-4xl font-bold text-foreground mb-4">Frequently Asked Questions</h1>
+        <p className="text-lg text-muted-foreground">
+          Everything you need to know about EmojiCrypt and hiding messages in emojis.
+        </p>
+      </div>
 
-        <div className="space-y-6">
-          {faqs.map((faq, index) => (
-            <Card key={index} className="border-border/50">
-              <CardHeader>
-                <CardTitle className="text-lg text-foreground">{faq.question}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        <div className="mt-12 text-center">
-          <Card className="border-border/50">
+      <div className="space-y-6">
+        {faqs.map((faq, index) => (
+          <Card key={index} className="border-border/50">
             <CardHeader>
-              <CardTitle className="text-xl text-foreground">Still have questions?</CardTitle>
-              <CardDescription>Can't find the answer you're looking for? We're here to help!</CardDescription>
+              <CardTitle className="text-lg text-foreground">{faq.question}</CardTitle>
             </CardHeader>
             <CardContent>
-              <a
-                href="mailto:support@emojicrypt.com"
-                className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
-              >
-                Contact Support
-              </a>
+              <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
             </CardContent>
           </Card>
-        </div>
+        ))}
+      </div>
+
+      <div className="mt-12 text-center">
+        <Card className="border-border/50">
+          <CardHeader>
+            <CardTitle className="text-xl text-foreground">Still have questions?</CardTitle>
+            <CardDescription>Can't find the answer you're looking for? We're here to help!</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <a
+              href="mailto:support@emojicrypt.com"
+              className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+            >
+              Contact Support
+            </a>
+          </CardContent>
+        </Card>
       </div>
     </div>
   )
