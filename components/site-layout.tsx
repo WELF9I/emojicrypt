@@ -1,4 +1,7 @@
+"use client"
+
 import dynamic from "next/dynamic"
+import { Toaster } from "@/components/ui/toaster"
 
 const Header = dynamic(() => import("@/components/header").then(mod => mod.Header), {
   loading: () => <div className="h-16" />
@@ -14,6 +17,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
       <Header />
       <main className="flex-1">{children}</main>
       <Footer />
+      <Toaster />
     </div>
   )
 }
