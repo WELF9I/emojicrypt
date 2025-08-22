@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { EncodeDecode } from "@/components/encode-decode"
 
 export const metadata: Metadata = {
-  title: "Emoji Encoder Tool - Encode & Decode Hidden Messages Online",
+  title: "Hide a message in an emoji - Encode & Decode Hidden Messages Online",
   description:
     "Free online tool to encode secret messages into emojis, letters, digits, or special characters. Hide and reveal hidden messages instantly with EmojiCrypt.",
   keywords:
