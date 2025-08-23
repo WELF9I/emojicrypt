@@ -93,6 +93,31 @@ export default function PrivacyPage() {
           </section>
 
         </div>
+        
+        {/* Additional Links */}
+        <div className="mt-12 pt-8 border-t">
+          <h3 className="text-lg font-semibold text-foreground mb-4">Additional Information</h3>
+          <div className="flex flex-wrap gap-4">
+            <Link 
+              href="/terms" 
+              className="text-primary hover:underline"
+            >
+              Terms of Service
+            </Link>
+            <Link 
+              href="/faq" 
+              className="text-primary hover:underline"
+            >
+              Frequently Asked Questions
+            </Link>
+            <Link 
+              href="/blog" 
+              className="text-primary hover:underline"
+            >
+              Blog
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )

@@ -159,6 +159,13 @@ export default function EmojiSteganographyUseCases() {
           information for intended recipients. Here are ten creative and practical ways people are using this
           technology today.
         </p>
+        
+        <div className="bg-muted/50 p-4 rounded-lg border-l-4 border-l-primary/30 my-8">
+          <p className="text-sm text-muted-foreground">
+            <strong>Note:</strong> For more information about how EmojiCrypt works, see our <Link href="/faq" className="text-primary hover:underline">FAQ</Link>. 
+            You can also learn about our commitment to your privacy in our <Link href="/privacy" className="text-primary hover:underline">Privacy Policy</Link>.
+          </p>
+        </div>
       </div>
 
       <div className="space-y-8 mb-12">

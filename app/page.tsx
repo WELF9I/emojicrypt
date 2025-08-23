@@ -81,6 +81,9 @@ export default function Home() {
           <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto">
             This free online tool uses steganography to hide secret messages within emojis, letters, digits, and special characters. Instantly encode and decode messages with a single click.
           </p>
+          <p className="text-xs text-muted-foreground mt-4">
+            Learn more about <Link href="/faq" className="text-primary hover:underline">how it works</Link> or explore <Link href="/blog" className="text-primary hover:underline">creative use cases</Link>.
+          </p>
         </div>
         
         <EncodeDecode />
@@ -97,7 +100,7 @@ export default function Home() {
                 <h4 className="font-semibold">Secure & Private</h4>
               </div>
               <p className="text-sm text-muted-foreground">
-                All processing happens locally in your browser. Your messages never leave your device.
+                All processing happens locally in your browser. Your messages never leave your device. Learn more in our <Link href="/privacy" className="text-primary hover:underline">privacy policy</Link>.
               </p>
             </div>
             
@@ -121,7 +124,7 @@ export default function Home() {
                 <h4 className="font-semibold">Invisible Encoding</h4>
               </div>
               <p className="text-sm text-muted-foreground">
-                Hidden messages are completely invisible to the naked eye, appearing as normal text.
+                Hidden messages are completely invisible to the naked eye, appearing as normal text. See <Link href="/faq" className="text-primary hover:underline">FAQ</Link> for more details.
               </p>
             </div>
             
@@ -133,7 +136,7 @@ export default function Home() {
                 <h4 className="font-semibold">Free Forever</h4>
               </div>
               <p className="text-sm text-muted-foreground">
-                No registration required, no premium features, and completely free to use.
+                No registration required, no premium features, and completely free to use. See our <Link href="/terms" className="text-primary hover:underline">terms of service</Link>.
               </p>
             </div>
           </div>
@@ -155,6 +158,21 @@ export default function Home() {
               <Link href="/faq">View FAQ</Link>
             </Button>
           </div>
+        </div>
+        
+        {/* Additional Links Section */}
+        <div className="mt-12 text-center">
+          <p className="text-sm text-muted-foreground">
+            Learn more about our commitment to your{" "}
+            <Link href="/privacy" className="text-primary hover:underline">
+              privacy
+            </Link>{" "}
+            and{" "}
+            <Link href="/terms" className="text-primary hover:underline">
+              terms of service
+            </Link>
+            .
+          </p>
         </div>
       </main>
     </div>

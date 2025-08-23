@@ -89,7 +89,7 @@ export function Footer() {
         {/* Resources Section */}
         <div className="border-t mt-8 pt-6">
           <h4 className="text-sm font-semibold text-foreground mb-4">Resources</h4>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm">
             <div>
               <h5 className="font-medium mb-2">Learning</h5>
               <ul className="space-y-1 text-muted-foreground">
@@ -151,6 +151,41 @@ export function Footer() {
                     className="hover:text-foreground transition-colors flex items-center gap-1"
                   >
                     Password Security <ExternalLink className="h-3 w-3" />
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://www.ssllabs.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-foreground transition-colors flex items-center gap-1"
+                  >
+                    SSL Labs <ExternalLink className="h-3 w-3" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 className="font-medium mb-2">Research</h5>
+              <ul className="space-y-1 text-muted-foreground">
+                <li>
+                  <a 
+                    href="https://arxiv.org/search/?searchtype=all&query=steganography" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-foreground transition-colors flex items-center gap-1"
+                  >
+                    Steganography Research <ExternalLink className="h-3 w-3" />
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://crypto.stackexchange.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-foreground transition-colors flex items-center gap-1"
+                  >
+                    Cryptography Q&A <ExternalLink className="h-3 w-3" />
                   </a>
                 </li>
               </ul>

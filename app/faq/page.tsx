@@ -130,7 +130,7 @@ export default function FAQPage() {
         </Card>
       </div>
 
-      <div className="mt-12 text-center">
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
         <Card className="border-border/50">
           <CardHeader>
             <CardTitle className="text-xl text-foreground">Still have questions?</CardTitle>
@@ -143,6 +143,21 @@ export default function FAQPage() {
             >
               Contact Support
             </a>
+          </CardContent>
+        </Card>
+        
+        <Card className="border-border/50">
+          <CardHeader>
+            <CardTitle className="text-xl text-foreground">Explore Our Blog</CardTitle>
+            <CardDescription>Discover creative use cases and insights about steganography</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Link 
+              href="/blog" 
+              className="inline-flex items-center px-6 py-3 border border-input bg-background rounded-lg hover:bg-accent hover:text-accent-foreground transition-colors"
+            >
+              Read Our Blog
+            </Link>
           </CardContent>
         </Card>
       </div>
