@@ -5,6 +5,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { SiteLayout } from "@/components/site-layout"
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -121,7 +122,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <SiteLayout>{children}<Analytics /></SiteLayout>
+          <SiteLayout>{children}<Analytics /><SpeedInsights /></SiteLayout>
         </ThemeProvider>
       </body>
     </html>
