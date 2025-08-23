@@ -14,7 +14,10 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Hide a message in an emoji - Encode & Decode Hidden Messages Online",
+  title: {
+    default: "Hide a message in an emoji - Encode & Decode Hidden Messages Online",
+    template: "%s | EmojiCrypt"
+  },
   description:
     "Encode secret messages into emojis, letters, digits, or special characters. Easily copy-paste encoded text and decode hidden messages instantly. Free online steganography tool.",
   keywords:
@@ -73,6 +76,9 @@ export const metadata: Metadata = {
       { url: "/favicon.png" },
       { url: "/favicon.webp" },
     ],
+  },
+  verification: {
+    google: "your-google-site-verification-code-here", // Add your verification code if you have one
   },
 }
 

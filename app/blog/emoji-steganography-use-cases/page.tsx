@@ -12,6 +12,8 @@ import {
   Eye,
   Lock,
   Sparkles,
+  BookOpen,
+  ChevronRight,
 } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -28,11 +30,20 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2025-08-22T00:00:00Z",
     authors: ["EmojiCrypt Team"],
+    images: [
+      {
+        url: "/og-image.webp",
+        width: 1200,
+        height: 630,
+        alt: "10 Creative Use Cases for Emoji Steganography",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "10 Creative Use Cases for Emoji Steganography in 2025",
     description: "Explore practical applications of hiding messages in emojis for security, business, and creativity.",
+    images: ["/og-image.webp"],
   },
 }
 
@@ -175,6 +186,52 @@ export default function EmojiSteganographyUseCases() {
             </CardContent>
           </Card>
         ))}
+      </div>
+
+      {/* Additional Resources */}
+      <div className="mb-12">
+        <h2 className="text-2xl font-bold text-foreground mb-6">Related Resources</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <Card className="border-border/50 hover:border-primary/30 transition-colors">
+            <CardHeader>
+              <div className="flex items-center gap-2">
+                <BookOpen className="h-5 w-5 text-primary" />
+                <CardTitle className="text-lg">FAQ</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-muted-foreground mb-3">
+                Find answers to common questions about EmojiCrypt and steganography.
+              </p>
+              <Link 
+                href="/faq" 
+                className="inline-flex items-center text-primary text-sm hover:underline"
+              >
+                View FAQ <ChevronRight className="h-4 w-4 ml-1" />
+              </Link>
+            </CardContent>
+          </Card>
+          
+          <Card className="border-border/50 hover:border-primary/30 transition-colors">
+            <CardHeader>
+              <div className="flex items-center gap-2">
+                <Shield className="h-5 w-5 text-primary" />
+                <CardTitle className="text-lg">Privacy Policy</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-muted-foreground mb-3">
+                Learn how we protect your privacy with our browser-only processing approach.
+              </p>
+              <Link 
+                href="/privacy" 
+                className="inline-flex items-center text-primary text-sm hover:underline"
+              >
+                Read Policy <ChevronRight className="h-4 w-4 ml-1" />
+              </Link>
+            </CardContent>
+          </Card>
+        </div>
       </div>
 
       <Card className="bg-primary/5 border-primary/20">

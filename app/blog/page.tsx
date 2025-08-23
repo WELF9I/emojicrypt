@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { ArrowLeft, Calendar, User, Clock } from "lucide-react"
+import { ArrowLeft, Calendar, User, Clock, BookOpen, Shield, Zap } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
@@ -72,49 +72,65 @@ export default function BlogPage() {
           </CardContent>
         </Card>
 
-        {/* Coming Soon Posts
-        <div className="grid gap-6 md:grid-cols-2">
-          <Card className="opacity-75">
-            <CardHeader>
-              <Badge variant="outline" className="w-fit mb-2">
-                Coming Soon
-              </Badge>
-              <CardTitle className="text-lg">The Science Behind Unicode Steganography</CardTitle>
-              <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                <div className="flex items-center gap-1">
-                  <Calendar className="h-4 w-4" />
-                  February 2025
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground text-sm">
-                Deep dive into how zero-width characters and Unicode manipulation enable invisible message embedding.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="opacity-75">
-            <CardHeader>
-              <Badge variant="outline" className="w-fit mb-2">
-                Coming Soon
-              </Badge>
-              <CardTitle className="text-lg">Privacy in the Digital Age: Why Steganography Matters</CardTitle>
-              <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                <div className="flex items-center gap-1">
-                  <Calendar className="h-4 w-4" />
-                  March 2025
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground text-sm">
-                Exploring the importance of hidden communication methods in protecting personal privacy and freedom of
-                expression.
-              </p>
-            </CardContent>
-          </Card>
-        </div> */}
+        {/* Additional Resources */}
+        <div className="mt-12">
+          <h2 className="text-2xl font-bold text-foreground mb-6">Explore More Resources</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Card className="border-border/50 hover:border-primary/30 transition-colors">
+              <CardHeader>
+                <BookOpen className="h-8 w-8 text-primary mb-2" />
+                <CardTitle className="text-lg">FAQ</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Find answers to common questions about EmojiCrypt and steganography.
+                </p>
+                <Link 
+                  href="/faq" 
+                  className="text-primary text-sm hover:underline"
+                >
+                  View FAQ
+                </Link>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-border/50 hover:border-primary/30 transition-colors">
+              <CardHeader>
+                <Shield className="h-8 w-8 text-primary mb-2" />
+                <CardTitle className="text-lg">Privacy</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Learn how we protect your privacy with our browser-only processing approach.
+                </p>
+                <Link 
+                  href="/privacy" 
+                  className="text-primary text-sm hover:underline"
+                >
+                  Privacy Policy
+                </Link>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-border/50 hover:border-primary/30 transition-colors">
+              <CardHeader>
+                <Zap className="h-8 w-8 text-primary mb-2" />
+                <CardTitle className="text-lg">Try EmojiCrypt</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Start encoding and decoding hidden messages with our free online tool.
+                </p>
+                <Link 
+                  href="/" 
+                  className="text-primary text-sm hover:underline"
+                >
+                  Use Tool Now
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Mail } from "lucide-react"
+import { Mail, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Footer() {
@@ -83,6 +83,78 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
+          </div>
+        </div>
+
+        {/* Resources Section */}
+        <div className="border-t mt-8 pt-6">
+          <h4 className="text-sm font-semibold text-foreground mb-4">Resources</h4>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+            <div>
+              <h5 className="font-medium mb-2">Learning</h5>
+              <ul className="space-y-1 text-muted-foreground">
+                <li>
+                  <a 
+                    href="https://en.wikipedia.org/wiki/Steganography" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-foreground transition-colors flex items-center gap-1"
+                  >
+                    Steganography <ExternalLink className="h-3 w-3" />
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://en.wikipedia.org/wiki/Unicode" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-foreground transition-colors flex items-center gap-1"
+                  >
+                    Unicode Standard <ExternalLink className="h-3 w-3" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 className="font-medium mb-2">Security</h5>
+              <ul className="space-y-1 text-muted-foreground">
+                <li>
+                  <a 
+                    href="https://www.eff.org/issues/privacy" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-foreground transition-colors flex items-center gap-1"
+                  >
+                    Digital Privacy <ExternalLink className="h-3 w-3" />
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://www.eff.org/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-foreground transition-colors flex items-center gap-1"
+                  >
+                    Electronic Frontier Foundation <ExternalLink className="h-3 w-3" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 className="font-medium mb-2">Tools</h5>
+              <ul className="space-y-1 text-muted-foreground">
+                <li>
+                  <a 
+                    href="https://haveibeenpwned.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-foreground transition-colors flex items-center gap-1"
+                  >
+                    Password Security <ExternalLink className="h-3 w-3" />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 

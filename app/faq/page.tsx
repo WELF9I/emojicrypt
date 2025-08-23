@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, BookOpen, Shield } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "Is my data secure and private?",
     answer:
-      "Yes! All encoding and decoding happens entirely in your browser. Your messages never leave your device or get sent to our servers. We don't store, log, or have access to any of your data.",
+      "Yes! All encoding and decoding happens entirely in your browser. Your messages never leave your device or get sent to our servers. We don't store, log, or have access to any of your data. Learn more about our approach in our Privacy Policy.",
   },
   {
     question: "Can I combine emojis with letters and numbers?",
@@ -85,6 +85,49 @@ export default function FAQPage() {
             </CardContent>
           </Card>
         ))}
+      </div>
+
+      {/* Additional Resources Section */}
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <Card className="border-border/50">
+          <CardHeader>
+            <div className="flex items-center gap-2">
+              <BookOpen className="h-5 w-5 text-primary" />
+              <CardTitle className="text-lg text-foreground">Learn More</CardTitle>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground mb-4">
+              Discover creative use cases for emoji steganography in our comprehensive guide.
+            </p>
+            <Link 
+              href="/blog/emoji-steganography-use-cases" 
+              className="inline-flex items-center text-primary hover:underline"
+            >
+              Read Our Guide
+            </Link>
+          </CardContent>
+        </Card>
+        
+        <Card className="border-border/50">
+          <CardHeader>
+            <div className="flex items-center gap-2">
+              <Shield className="h-5 w-5 text-primary" />
+              <CardTitle className="text-lg text-foreground">Privacy</CardTitle>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground mb-4">
+              Learn how we protect your privacy with our browser-only processing approach.
+            </p>
+            <Link 
+              href="/privacy" 
+              className="inline-flex items-center text-primary hover:underline"
+            >
+              Privacy Policy
+            </Link>
+          </CardContent>
+        </Card>
       </div>
 
       <div className="mt-12 text-center">
