@@ -90,6 +90,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={dmSans.variable} suppressHydrationWarning>
       <head>
+        <meta name="google-site-verification" content="H8HRV9_3aepgkI8Z_UBJJgKdDD9f4roECMn45QXrp3k" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
